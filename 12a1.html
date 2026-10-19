@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>12A1 - A Special Gift for You</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="12a1.css">
+</head>
+
+<body>
+    <div class="heart-container" id="heartContainer"></div>
+
+    <main class="class-page">
+
+        <a href="index.html" class="back-button">
+            ← Trang chủ
+        </a>
+
+        <header class="page-header">
+            <div class="header-flowers">🌷 💗 🌷</div>
+
+            <p class="eyebrow">A LITTLE GIFT FROM NGOC DUC</p>
+
+            <h1>
+                Happy Women's Day
+                <span>20/10</span>
+            </h1>
+
+            <p class="intro">
+                Mỗi cô gái đều là bông hoa mang sắc màu riêng.
+                Hãy chọn tên của bạn và mở món quà nhỏ mà tôi
+                đã chuẩn bị nhé! 💌
+            </p>
+        </header>
+
+        <section class="name-section">
+            <h2>🌸 Những bông hoa của 12A1 🌸</h2>
+
+            <p class="section-description">
+                Chọn tên của bạn để mở món quà bí mật.
+            </p>
+
+            <div id="nameList" class="name-list">
+                <p class="loading-text">Đang chuẩn bị những món quà... 💗</p>
+            </div>
+
+            <p id="loadError" class="error-message" hidden></p>
+        </section>
+
+        <section id="passwordPanel" class="popup-panel" hidden>
+            <button type="button" id="closePassword" class="close-button" aria-label="Đóng">×</button>
+
+            <div class="panel-icon">🔐</div>
+
+            <h2>Một chút bí mật dành cho bạn</h2>
+
+            <p>
+                Xin chào <strong id="selectedName"></strong>!
+                Có một điều đặc biệt đang chờ bạn khám phá.
+            </p>
+
+            <form id="passwordForm">
+                <label for="birthdayInput">Mật khẩu của bạn</label>
+
+                <input type="password" id="birthdayInput" placeholder="12345678" inputmode="numeric" pattern="[0-9]{8}"
+                    maxlength="8" autocomplete="off" required>
+
+                <p class="input-hint">
+                    Một bí mật nho nhỏ, bạn có nhớ không? Bí mật ấy đã theo bạn từ những ngày đầu tiên.🌷
+                </p>
+
+                <p id="passwordError" class="error-message" hidden>
+                    Mật khẩu chưa đúng. Bạn thử lại nhé! 💗
+                </p>
+
+                <button type="submit" class="action-button">
+                    Mở lời chúc 💌
+                </button>
+            </form>
+        </section>
+
+        <section id="wishPanel" class="popup-panel wish-panel" hidden>
+            <button type="button" id="closeWish" class="close-button" aria-label="Đóng">×</button>
+
+            <div class="panel-icon">💝</div>
+
+            <p class="wish-label">A LITTLE MESSAGE FOR</p>
+
+            <h2 id="wishName"></h2>
+
+            <div class="wish-decoration">♡ ── ♥ ── ♡</div>
+
+            <div id="wishContent" class="wish-content"></div>
+
+            <p class="wish-signature">
+                With love, from NgocDuc 🌷
+            </p>
+
+            <button type="button" id="backToNames" class="action-button">
+                Trở về danh sách
+            </button>
+        </section>
+
+        <footer class="page-footer">
+            Made with ♡ for you by NgocDuc
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+    <script src="12a1.js"></script>
+</body>
+
+</html>
